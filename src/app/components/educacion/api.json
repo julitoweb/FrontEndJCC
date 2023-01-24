@@ -1,0 +1,57 @@
+[{
+        "id": 1,
+        "nombusuario": "admin",
+        "nombre": "julio",
+        "apellido": "caraballo",
+        "email": "juliocaraballomantica@gmail.com",
+        "telefono": "3484554567",
+        "password": "1234"
+    },
+    {
+        "id": 2,
+        "nombusuario": "admin",
+        "nombre": "cesar",
+        "apellido": "caraballo",
+        "email": "juliocaraballomantica@gmail.com",
+        "telefono": "3484554567",
+        "password": "1234"
+    },
+    {
+        "id": 3,
+        "nombusuario": "admin",
+        "nombre": "gladys",
+        "apellido": "caraballo",
+        "email": "juliocaraballomantica@gmail.com",
+        "telefono": "3484554567",
+        "password": "1234"
+
+    },
+    {
+        "id": 4,
+        "nombusuario": "admin",
+        "nombre": "agustin",
+        "apellido": "caraballo",
+        "email": "juliocaraballomantica@gmail.com",
+        "telefono": "3484554567",
+        "password": "1234"
+    },
+    {
+        "id": 5,
+        "nombusuario": "admin",
+        "nombre": "federico",
+        "apellido": "caraballo",
+        "email": "juliocaraballomantica@gmail.com",
+        "telefono": "3484554567",
+        "password": "1234"
+    },
+    {
+        "id": 6,
+        "nombusuario": "admin",
+        "nombre": "pablo",
+        "apellido": "caraballo",
+        "email": "juliocaraballomantica@gmail.com",
+        "telefono": "3484554567",
+        "password": "1234"
+    }
+
+]

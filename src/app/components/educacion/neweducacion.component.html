@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreE">Nombre </label>
+                    <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="titulo" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionE">Descripcion </label>
+                    <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="contenido" required>
+                </div>
+                <div class="form-group">
+                    <label for="image">URL Imagen </label>
+                    <input type="text" class="form-control" id="image" name="image" [(ngModel)]="imagen" required>
+                </div>
+                <button class="btn btn-primary">
+                    Agregar 
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

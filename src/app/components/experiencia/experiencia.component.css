@@ -1,0 +1,32 @@
+.row {
+    padding: 20px;
+}
+
+div {
+    background: #b1674c;
+}
+
+h1,
+h3 {
+    display: inline;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    margin-top: -700px;
+    border: 10px solid #666;
+} 
+.demi {
+margin-top: -120;
+margin-left: 30px;
+
+}
+
+/*h2 {
+
+    margin-top: -310px;
+}*/
+
+ 

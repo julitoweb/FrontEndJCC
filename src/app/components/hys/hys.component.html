@@ -1,0 +1,37 @@
+<div class="row">
+
+
+    <h1>Habilidades</h1>
+
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/newskill" *ngIf="isLogged">
+            Nueva Habilidad
+        </button>
+    </div>
+
+
+
+
+    <div class="col-sm-2 col-md-4  col-lg-auto " *ngFor="let habilidad of skill">
+        <circle-progress [percent]="habilidad.porcentaje" [radius]="100 " [imageSrc]="habilidad.nombre"
+            [showImage]="true " [showUnits]="false " [showSubtitle]="true " [outerStrokeWidth]="16 "
+            [innerStrokeWidth]="6 " [outerStrokeColor]=" '#33C1FF'" [innerStrokeColor]=" '#C7E596' " [animation]="true "
+            [imageHeight]="80 " [imageWidth]="70 " [animationDuration]="900 " widht="100%">
+
+        </circle-progress>
+
+        <div *ngIf="isLogged" style="margin-left: 60px;">
+            <!-- Este boton es de prueba , de la pagina del pelado de Ramos mejias-->
+
+            <button class="btn btn-light" routerLink="/editskill/{{habilidad.id}}">
+                <i class="bi bi-pencil-fill"> </i> edit</button>
+        </div>
+        <!-- esto viene de una base de datos-->
+        <div *ngIf="isLogged" style="margin-left: 55px;">
+            <button class="btn btn-danger" (click)="delete(habilidad.id)">
+                <i class="bi bi-trash-fill"> </i> delete</button>
+        </div>
+    </div>
+
+
+</div>

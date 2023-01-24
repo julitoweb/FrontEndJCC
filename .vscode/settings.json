@@ -1,0 +1,10 @@
+{
+    "git.ignoreLimitWarning": true,
+    "files.exclude": {
+        "": true
+    },
+    "cSpell.words": [
+        "aplication",
+        "editskill"
+    ]
+}

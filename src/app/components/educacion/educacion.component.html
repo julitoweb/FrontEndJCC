@@ -1,0 +1,49 @@
+<div class="row">
+    <h1></h1>
+    <!-- nuevos botones edit y delete de bootstrap-->
+</div>
+<div class="row">
+    <h1><strong>Estudios Realizados </strong></h1>
+    <br class="col-lg-110">
+    <br class="col-lg-11">
+
+    <td *ngIf="isLogged">
+        <div class="col-lg-12">
+            <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+                Agregar Educacion
+            </button>
+        </div>
+    </td>
+
+    <br class="col-lg-110">
+    <br class="col-lg-11">
+
+    <table *ngFor="let edu of educacion">
+        <tbody>
+            <ul>
+                <li>
+                    <H1>{{edu.titulo}}</H1> 
+                    <h3></h3>
+                    <div>
+                        <img src="{{edu.imagenUrl}}" height="50" width="50">
+                    </div>
+                </li>
+                <p>{{edu.contenido}}
+                </p>
+            </ul>
+
+            <td *ngIf="isLogged">
+                <button class="btn btn-light" routerLink="/editedu/{{edu.id}}">
+                    <i class="bi bi-pencil-fill"></i> EDITAR</button>
+            </td>
+
+            <td *ngIf="isLogged">
+                <button class="btn btn-danger" (click)="delete(edu.id)">
+                    <i class="bi bi-trash-fill"></i> BORRAR</button>
+            </td>
+        </tbody>
+    </table>
+
+</div>
+
+
